@@ -135,6 +135,7 @@ nav {
     font-weight: 200;
     font-size: var(--font-medium);
     line-height: 50px;
+    letter-spacing: 5px;
 }
 
 .welcome:hover, .welcome:active, .visiting:hover, .visiting:active, .explore:hover, .explore:active, .video:hover, .video:active,
@@ -169,6 +170,11 @@ a {
     align-items: center;
     max-width: 195px;
 }
+
+.logo-container > img {
+    margin-right: 20px;
+}
+
 .section {
     position: relative;
     padding: 75px 0px;
@@ -193,6 +199,7 @@ a {
     height: 75px;
     margin-top: 50px;
     border-radius: 10px;
+    border-width: 0;
     font-size: var(--font-small);
     font-weight: 200;
     text-align: center;
