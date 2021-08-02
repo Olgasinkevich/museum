@@ -6,7 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Museum</title>
-    <link rel="icon" href="assets/favicon.ico">
+    <link rel="icon" href="assets/svg/favicon.svg" type="image/svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -16,118 +16,235 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="header-container dark-section">
-    <container class="section container-1 header-container-left">
-        <img src="assets/svg/favicon.svg" alt="logo">
-        <h4 class="uppercase logo-louvre">louvre</h4>
-    </container>
-    <nav>
-      <ul class="section container container-1 header-container">
-        <li><a class="visiting" href="#visiting">Visiting</a></li>
-        <li><a class="explore" href="#explore">Explore</li>
-        <li><a class="video" href="#video">Video</li>
-        <li><a class="tickets" href="#tickets">Tickets</li>
-        <li><a class="contacts" href="#contacts">Contacts</li>
-      </ul>
-    </nav>
+<header class="dark-section">
+    <div class="container header-container ">
+        <div class="section header-container-left logo-container">
+            <img src="assets/svg/favicon.svg" alt="logo">
+            <h4 class="uppercase logo-louvre">louvre</h4>
+        </div>
+
+        <nav>
+          <ul class="section header-container">
+            <li class="li-padding"><a class="visiting first-child-padding" href="#visiting">Visiting</a></li>
+            <li class="li-padding"><a class="explore"  href="#explore">Explore</a></li>
+            <li class="li-padding"><a class="video" href="#video">Video</a></li>
+            <li class="li-padding"><a class="tickets" href="#tickets">Tickets</a></li>
+            <li class="li-padding"><a class="contacts last-child-padding" href="#contacts">Contacts</a></li>
+          </ul>
+        </nav>
+    </div>
 </header>
 
 <main>
 
-    <section class="container-image section-1 section dark-section">
-        <container class="container-1 container-welcome">
-        <h1>welcome <br> to the louvre</h1>
-        <h4>From the castle to the museum</h4>
-        <button class="button-discover">Discover the Louvre</button>
-        </container>
-
-        <img class="img-louvre-pyramid" src="assets/img/background.jpg" alt="Louvre pyramid">
+    <section class="container-image section-1 dark-section" id="welcome">
+        <div class="container">
+            <div class="container-welcome">
+                <h1>welcome<br>to the louvre</h1>
+                <h4 class="padding-26">From the castle to the museum</h4>
+                <button class="button-discover">Discover the Louvre</button>
+            </div>
+            <div class="image-wrapper">
+                <img src="assets/img/background.jpg" alt="Louvre pyramid" />
+            </div>
+        </div>
     </section>
 
-    <section class="section-1 section id="visiting">
-        <h2 class="color-gold">virtual tour</h2>
-        <hr class="hr-long">
-<div class="tour-container">
+    <section class="section" id="visiting">
+        <div class="container">
+        <h2 class="color-gold underline-title">virtual tour</h2>
+       <div class="flex-container">
     <div class="tour-item-container">
         <div>
-            <img src="./assets/img/Rectangle royal Palace.jpg" alt="Royal Palace">
+            <a href="https://www.google.com/maps/@48.8606882,2.3356791,3a,90y,328.36h,87.55t/data=!3m7!1e1!3m5!1sAF
+            1QipMZ9YgnArbwEIbTDANeSQYFu9gNqpW_2Sv8FBvY!2e10!3e12!7i4352!8i1815" alt="royal palace" width="440" height="285">
+            <img src="./assets/img/royal palace.jpg" alt="Royal Palace">
+            </a>
         </div>
-        <h3>royal palace</h3>
-        <hr class="hr-short">
-        <p class="font-small">360° Virtual Tour</p>
-        <p class="font-tiny">Google Street Panorama View</p>
-    </div>
-    <div class="tour-item-container">
-        <div>
-            <img src="./assets/img/Rectangle royal Palace.jpg" alt="Royal Palace">
-        </div>
-        <h3>royal palace</h3>
-        <hr class="hr-short">
-        <p class="font-small">360° Virtual Tour</p>
-        <p class="font-tiny">Google Street Panorama View</p>
-    </div>
-    <div class="tour-item-container">
-        <div>
-            <img src="./assets/img/Rectangle royal Palace.jpg" alt="Royal Palace">
-        </div>
-        <h3>royal palace</h3>
-        <hr class="hr-short">
-        <p class="font-small">360° Virtual Tour</p>
-        <p class="font-tiny">Google Street Panorama View</p>
-    </div>
-    <div class="tour-item-container">
-        <div>
-            <img src="./assets/img/Rectangle royal Palace.jpg" alt="Royal Palace">
-        </div>
-        <h3>royal palace</h3>
-        <hr class="hr-short">
-        <p class="font-small">360° Virtual Tour</p>
-        <p class="font-tiny">Google Street Panorama View</p>
-    </div>
-    <div class="tour-item-container">
-        <div>
-            <img src="./assets/img/Rectangle royal Palace.jpg" alt="Royal Palace">
-        </div>
-        <h3>royal palace</h3>
-        <hr class="hr-short">
-        <p class="font-small">360° Virtual Tour</p>
-        <p class="font-tiny">Google Street Panorama View</p>
-    </div>
-    <div class="tour-item-container">
-        <div>
-            <img src="./assets/img/Rectangle royal Palace.jpg" alt="Royal Palace">
-        </div>
-        <h3>royal palace</h3>
-        <hr class="hr-short">
-        <p class="font-small">360° Virtual Tour</p>
-        <p class="font-tiny">Google Street Panorama View</p>
+        <h3 class="underline-item">royal palace</h3>
+         <p class="font-small font-dark padding-21">360° Virtual Tour</p>
+        <p class="font-tiny font-dark padding-10">Google Street Panorama View</p>
     </div>
 
+
+           <div class="tour-item-container">
+               <div>
+                   <a href="https://www.google.com/maps/@48.8563254,2.3352706,3a,75y,90t/data=!3m7!1e1!3m5!1sAF1QipNRj_C
+                   wP4coDMYdCHj6qHeBeJpI2VxU5BUsOX4F!2e10!3e12!7i11000!8i5500" alt="Denon Wing" width="440" height="285">
+                       <img src="./assets/img/demon%20wing.jpg" alt="Denon Wing">
+                   </a>
+               </div>
+               <h3 class="underline-item">Denon Wing</h3>
+               <p class="font-small font-dark padding-21">360° Virtual Tour</p>
+               <p class="font-tiny font-dark padding-10">Google Street Panorama View</p>
+           </div>
+           <div class="tour-item-container">
+               <div>
+                   <a href="https://www.google.com/maps/@48.8601723,2.3395439,3a,88.4y,322.04h,84.25t/data=!3m7!1e1!3m5!
+                   1sAF1QipNMZGQuEA-pAUvIG_eP_2f3gWTKZEJ6XLVJ-Pgb!2e10!3e12!7i10240!8i5120" alt="Colonnade Perrault" width="440" height="285">
+                       <img src="./assets/img/colonnade%20perrault.jpg" alt="Colonnade Perrault">
+                   </a>
+               </div>
+               <h3 class="underline-item">Colonnade Perrault</h3>
+               <p class="font-small font-dark padding-21">360° Virtual Tour</p>
+               <p class="font-tiny font-dark padding-10">Google Street Panorama View</p>
+           </div>
+
+
+           <div class="tour-item-container">
+               <div>
+                   <a href="https://www.google.com/maps/@48.860183,2.3356156,3a,90y,177.69h,95.61t/data=!3m7!1e1!3m5!1s
+                   AF1QipP7uFZnTITRe-7AEVAgHAfqiCL-03gvBHcYWgF3!2e10!3e12!7i5472!8i2736" alt="Greek hall" width="440" height="285">
+                       <img src="./assets/img/greek%20hall.jpg" alt="Greek hall">
+                   </a>
+               </div>
+               <h3 class="underline-item">Greek hall</h3>
+               <p class="font-small font-dark padding-21">360° Virtual Tour</p>
+               <p class="font-tiny font-dark padding-10">Google Street Panorama View</p>
+           </div>
+
+           <div class="tour-item-container">
+               <div>
+                   <a href="https://www.google.com/maps/@48.8598788,2.3355157,3a,82.2y,7.53h,94t/data=!3m7!1e1!3m5!1sAF1
+                   QipO1wkUUbyzpPjj-OR0mR5etZJT-xl-40XK8rDQ3!2e10!3e12!7i10240!8i5120" alt="Mona Lisa" width="440" height="285">
+                       <img src="./assets/img/mona%20lisa.jpg" alt="Mona Lisa">
+                   </a>
+               </div>
+               <h3 class="underline-item">Mona Lisa</h3>
+               <p class="font-small font-dark padding-21">360° Virtual Tour</p>
+               <p class="font-tiny font-dark padding-10">Google Street Panorama View</p>
+           </div>
+           <div class="tour-item-container">
+               <div>
+                   <a href="https://www.google.com/maps/@48.8563254,2.3352706,3a,90y,21.26h,79.91t/data=!3m7!1e1!3m5!1s
+                   AF1QipPpGAowYatVyk3MMGnZAaQkYm2EUk-Dlca06SS5!2e10!3e12!7i11304!8i5652" alt="Night Palace" width="440" height="285">
+                       <img src="./assets/img/night%20palace.jpg" alt="Night Palace">
+                   </a>
+               </div>
+               <h3 class="underline-item">Night Palace</h3>
+               <p class="font-small font-dark padding-21">360° Virtual Tour</p>
+               <p class="font-tiny font-dark padding-10">Google Street Panorama View</p>
+           </div>
 </div>
+        </div>
     </section>
 
 
-    <section class="section-1 section dark-section" id="explore">
-        <h2>Picture explore</h2>
-        <hr class="hr-long text-explore">
-        <p class="font-small text-explore">Las Meninas is a 1656 painting by Diego Velázquez, the leading artist of the Spanish Golden Age.</p>
-        <p class="font-small text-explore">It was cleaned in 1984 to remove a "yellow veil" of dust that had gathered since the previous restoration in the 19th century.</p>
+    <section class="section dark-section" id="explore">
+        <div class="container">
+            <div class="container-explore">
+        <h2 class="underline-title">Picture explore</h2>
+        <p class="font-small padding-103">Las Meninas is a 1656 painting by Diego Velázquez, the leading artist of the Spanish Golden Age.</p>
+        <p class="font-small text-explore">It was cleaned in 1984 to remove a <span class="span-color">"yellow veil"</span> of dust that had gathered since the previous restoration in the 19th century.</p>
         <p class="font-small text-explore">The cleaning provoked furious protests, not because the picture had been damaged in any way, but because it looked different.</p>
-<img src="assets/img/Picture%20explore.png" alt="Picture">
+            </div>
+            <div class="image-wrapper-explore">
+                <img src="assets/img/Picture%20explore.png" alt="Picture">
+            </div>
+        </div>
     </section>
 
-        <section class="section-1 section video-section" id="video">
+        <section class="section video-section" id="video">
+            <div class="container">
+               <!-- <video src="assets/video/video.mp4" poster="assets/video/poster.jpg" controls></video>-->
+            <video class="video" src="https://www.youtube.com/embed/TmrhNme75Sw" controls></video>
+            <!--<iframe width="560" height="315" src="https://www.youtube.com/embed/TmrhNme75Sw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+            <div class="flex-container">
+            <h2 class="color-gold">Video journey</h2>
+            <p class="font-small text-video">Enter and visit one of the most famous museums in the world and enjoy masterpieces such as Mona Lisa or Hammurabi's Code</p>
+            </div>
+            </div>
     </section>
 
-    <section class="section-1 section dark-section" id="tickets">
+    <section class="section dark-section" id="tickets">
+        <div class="container">
+        <h2 class="underline-title">buy tickets</h2>
+                <div class="flex-container">
+            <img src="assets/img/Rectangle%20-%20buy.jpg" alt="picture">
+            <div>
+                <h4>Tickets type</h4>
+
+            <form class="font-small">
+                <ul>
+                <li><label class="input-top">
+                    <input type="radio" name="ticket-type" value="Permanent exhibition">Permanent exhibition
+                </label></li>
+                    <li><label class="input-top">
+                    <input  type="radio" name="ticket-type" value="Temporary exhibition">Temporary exhibition"
+                </label></li>
+                    <li><label class="input-top" >
+                    <input type="radio" name="ticket-type" value="Combined Admission">Combined Admission
+                </label></li>
+                </ul>
+            </form>
+            </div>
+            <div class="align-right">
+                <h4>Amount</h4>
+                <p class="font-small">Basic 18+</p>
+                <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                <input type="number" min="0" max="20" value="1" readonly class="number">
+                <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                <p class="font-small">Senior 65+</p>
+                <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                <input type="number" min="0" max="20" value="1" readonly class="number">
+                <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+                <h4 class="input-top">Total 220</h4>
+                <button class="button-buy">Buy Now</button>
+            </div>
+
+        </div>
+        </div>
     </section>
 
-    <section class="section-1 section" id="contacts">
+    <section class="section" id="contacts">
+        <div class="container">
+        <h2 class="underline-title color-gold">Contacts</h2>
+                <div class="flex-container">
+            <div>
+            <h4>Palais Royal</h4>
+            <h4>Musee du Louvre</h4>
+                <ul  class="margin-20">
+               <li><p>adresse:<span itemprop="adress">75001 Paris, France</span></p></li>
+                    <li><p>phone:<span itemprop="telephone">+33(0) 1 40 20 50 50</span> </p></li>
+            <li><p>mail:<span itemprop="email">info@louvre.fr</span> </p></li>
+                </ul>
+            </div>
+            <img src="assets/img/Rectangle%20-%20map.png" alt="map" width="960" height="620">
+
+        </div>
+        </div>
     </section>
 
 </main>
 
 <footer class="dark-section">
+        <div class="container header-container">
+        <div class="section header-container-left logo-container">
+            <img src="assets/svg/favicon.svg" alt="logo">
+            <h4 class="uppercase logo-louvre">louvre</h4>
+        </div>
+
+        <nav class="footer-height">
+            <ul class="section container header-container flex-column">
+                <li><a class="welcome" href="#welcome">Welcome</a></li>
+                <li><a class="visiting" href="#visiting">Visiting</a></li>
+                <li><a class="explore" href="#explore">Explore</a></li>
+                <li><a class="video" href="#video">Video</a></li>
+                <li><a class="tickets" href="#tickets">Tickets</a></li>
+                <li><a class="contacts" href="#contacts">Contacts</a></li>
+            </ul>
+        </nav>
+
+            <div class="social facebook">
+                <a href="#" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
+            </div>
+    </div>
+
+
+
+
+
+
 </footer>
 
 </body>
